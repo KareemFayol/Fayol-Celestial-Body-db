@@ -163,7 +163,8 @@ CREATE TABLE public.satellite (
     satellite_id integer NOT NULL,
     name character varying(30),
     origin character varying(30),
-    galaxy_id integer NOT NULL
+    galaxy_id integer NOT NULL,
+    alien boolean
 );
 
 
@@ -325,9 +326,9 @@ INSERT INTO public.planet VALUES (12, 'NGC 604 planet 2', false, 3, 7500);
 -- Data for Name: satellite; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.satellite VALUES (1, 'space x', 'USA', 1);
-INSERT INTO public.satellite VALUES (2, 'fibre 1', 'france', 2);
-INSERT INTO public.satellite VALUES (3, 'Optic Rodeo', 'russia', 8);
+INSERT INTO public.satellite VALUES (1, 'space x', 'USA', 1, NULL);
+INSERT INTO public.satellite VALUES (2, 'fibre 1', 'france', 2, NULL);
+INSERT INTO public.satellite VALUES (3, 'Optic Rodeo', 'russia', 8, NULL);
 
 
 --
